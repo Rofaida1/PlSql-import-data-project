@@ -17,6 +17,7 @@ BEGIN
    SELECT NVL(MAX(location_id), 0) + 100 INTO v_max_location_id FROM locations;
    EXECUTE IMMEDIATE 'CREATE SEQUENCE locations_seq START WITH ' || v_max_location_id || ' INCREMENT BY 100';
 END;
+--
 create or replace procedure import_employee_data is
    cursor temp_curs is
       select * from employees_temp;
