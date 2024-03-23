@@ -1,4 +1,3 @@
-```sql
 
 
 ALTER TABLE HR.EMPLOYEES
