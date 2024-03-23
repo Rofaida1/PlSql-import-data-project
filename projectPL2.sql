@@ -2,7 +2,7 @@ ALTER TABLE HR.EMPLOYEES
 MODIFY(EMAIL VARCHAR2(100 BYTE));
 
 
--- createing department_id sequence 
+--- createing department_id sequence 
 DECLARE
    v_max_department_id NUMBER;
 BEGIN
